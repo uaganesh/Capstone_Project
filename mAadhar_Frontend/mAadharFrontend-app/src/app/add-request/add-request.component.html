@@ -1,0 +1,18 @@
+<div>
+    <h2>mAadhaar Application</h2><br>
+    <form [formGroup]="reqRef" (ngSubmit)="storeRequest()">
+        <!-- <label>Adharid</label>
+        <input type="text" formControlName="adharid"><br/> -->
+        <label class="lead">Email</label>&nbsp;&nbsp;
+        <input type="text" formControlName="emailid"><br/><br>
+        <label class="lead">Name</label>&nbsp;&nbsp;
+        <input type="text" formControlName="name"><br/><br>
+        <label class="lead">Age</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" formControlName="age"><br/><br>
+        <label class="lead">Address</label>&nbsp;
+        <input type="text" formControlName="address"><br/><br>
+        <input type="submit" class="btn btn-success" value="APPLY"/>&nbsp;&nbsp;&nbsp;
+        <input type="reset" class="btn btn-danger" value="RESET"/><br/>
+    </form><br/>
+    <span style="color:rgb(21, 98, 31)">{{storeMsg}}</span>
+</div>

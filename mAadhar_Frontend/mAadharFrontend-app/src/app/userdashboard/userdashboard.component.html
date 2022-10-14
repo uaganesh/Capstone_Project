@@ -1,0 +1,16 @@
+<div>
+    <h4>User Dashboard ({{user}})</h4>
+    <a routerLink="storeReq" class="link-primary">Apply For New Aadhar Card</a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a routerLink="view" class="link-primary">View My Aadhar Card</a>
+    <br/>
+    <hr/>
+        <router-outlet></router-outlet>
+    <hr/>
+  
+    <br/>
+    <input type="button" class="btn btn-info" value="Request Duplicate mAdhaar Card" (click)="applydup()"/>&nbsp;&nbsp;
+    <input type="button" class="btn btn-danger" value="Close mAdhaar Card" (click)="closeadhar()"/><br>
+    <span style="color:green">{{close}}</span><br>
+    <span style="color:green">{{msg}}</span><br><br>
+    <input type="button" class="btn btn-secondary" value="logout" (click)="logout()"/>
+</div>
